@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: root
+    password: root
+
+  sql:
+    init:
+      platform: init
+      mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
